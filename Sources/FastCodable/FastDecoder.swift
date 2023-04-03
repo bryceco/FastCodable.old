@@ -26,7 +26,7 @@ public final class FastDecoder {
 		cursor = 0
 	}
 
-	public static func decode<T>(_ type: T.Type, data: Data) throws -> T where T: FastDecodable {
+	public static func decode<T>(_ type: T.Type, from data: Data) throws -> T where T: FastDecodable {
 		let decoder = FastDecoder(data: data)
 		let value = try type.init(fromFast: decoder)
 		guard
