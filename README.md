@@ -1,9 +1,11 @@
 # FastCodable
 
-An fast encoding/decoding library for Swift.
+A fast encoding/decoding library for Swift.
 * Minimal, extensible implementation of binary object serialization.
 * Not a drop-in replacement for Codable. You must add your own conformance to the protocol.
-* Supports all standard types: Int, Double, String, Array, Dictionary, Optional
+* Does not support endianness, so not suitable for transfering data between different architectures.
+* Supports most standard types: Int, Double, String, Array, Dictionary, Optional
+* Around 10x faster (in Release builds) than keyed coding solutions like JSONEncoder, PropertyListEncoder, etc.
 
 ```
 struct Test: FastCodable {
