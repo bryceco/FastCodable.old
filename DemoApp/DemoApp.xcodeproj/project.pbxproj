@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		029F4E5E29E24204001BC47C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 029F4E5D29E24204001BC47C /* main.swift */; };
+		029F4E6829E242E1001BC47C /* FastCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 029F4E6729E242E1001BC47C /* FastCodable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		029F4E5A29E24204001BC47C /* DemoApp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DemoApp; sourceTree = BUILT_PRODUCTS_DIR; };
 		029F4E5D29E24204001BC47C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		029F4E6529E242D5001BC47C /* FastCodable */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = FastCodable; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				029F4E6829E242E1001BC47C /* FastCodable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,8 +44,10 @@
 		029F4E5129E24204001BC47C = {
 			isa = PBXGroup;
 			children = (
+				029F4E6429E242D5001BC47C /* Packages */,
 				029F4E5C29E24204001BC47C /* DemoApp */,
 				029F4E5B29E24204001BC47C /* Products */,
+				029F4E6629E242E1001BC47C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +67,21 @@
 			path = DemoApp;
 			sourceTree = "<group>";
 		};
+		029F4E6429E242D5001BC47C /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				029F4E6529E242D5001BC47C /* FastCodable */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		029F4E6629E242E1001BC47C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +98,9 @@
 			dependencies = (
 			);
 			name = DemoApp;
+			packageProductDependencies = (
+				029F4E6729E242E1001BC47C /* FastCodable */,
+			);
 			productName = DemoApp;
 			productReference = 029F4E5A29E24204001BC47C /* DemoApp */;
 			productType = "com.apple.product-type.tool";
@@ -284,6 +307,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		029F4E6729E242E1001BC47C /* FastCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FastCodable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 029F4E5229E24204001BC47C /* Project object */;
 }
